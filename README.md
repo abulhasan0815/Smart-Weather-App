@@ -27,5 +27,5 @@ A modern, responsive weather application with beautiful UI and advanced features
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/weather-app-enhanced.git
+git clone https://github.com/your-username/Snart-Weather-App.git
 ```
