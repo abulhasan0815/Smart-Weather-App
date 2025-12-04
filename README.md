@@ -28,6 +28,8 @@ A modern, responsive weather application with beautiful UI and advanced features
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/Smart-Weather-App.git
+
 cd Smart-Weather-App
 
+start index.html
 ```
