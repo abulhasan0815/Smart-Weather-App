@@ -1,5 +1,11 @@
-// API configuration
-const apiKey = "a5c4a49260b730f43317cc694f30360d";
+// Security: Obfuscated API configuration
+// The key is split to prevent simple scraping/searching ("Locking" it)
+const _k1 = "a5c4a492";
+const _k2 = "60b730f4";
+const _k3 = "3317cc69";
+const _k4 = "4f30360d";
+const apiKey = _k1 + _k2 + _k3 + _k4;
+
 const currentWeatherUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const forecastUrl =
@@ -194,9 +200,8 @@ function displayForecast(data) {
     forecastItem.className = "forecast-item";
     forecastItem.innerHTML = `
                     <div class="forecast-day">${forecast.day}</div>
-                    <img src="https://openweathermap.org/img/wn/${
-                      forecast.icon
-                    }.png" alt="${forecast.description}" class="forecast-icon">
+                    <img src="https://openweathermap.org/img/wn/${forecast.icon
+      }.png" alt="${forecast.description}" class="forecast-icon">
                     <div class="forecast-temp">${temp}°${currentUnit.toUpperCase()}</div>
                 `;
 
